@@ -18,7 +18,7 @@ func (e *NotFoundErr) Error() string {
 func (e *NotFoundErr) IsNotFoundError() {}
 
 type Bolt struct {
-	Db *bolt.Db
+	Db *bolt.DB
 }
 
 func InitBolt(path string) (kvStore.Provider, error) {
